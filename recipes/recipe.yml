@@ -11,7 +11,7 @@ modules:
         destination: /
 
   - type: dnf
-    install-groups:
+    group-install:
       - admin-tools
       - basie-graphical
       - core
