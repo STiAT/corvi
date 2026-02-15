@@ -1,7 +1,7 @@
 name: corvi
 description: Ublue-OS based image with the Cosmic desktop environment.
 
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/blue-build/base-images/fedora-cosmic
 image-version: latest
 
 modules:
@@ -11,23 +11,9 @@ modules:
         destination: /
 
   - type: dnf
-    group-install:
+    group-remove:
       packages:
-        - admin-tools
-        - base-graphical
-        - core
-        - cosmic-desktop
-        - cosmic-desktop-apps
-        - desktop-accessibility
-        - dial-up
-        - fonts
-        - guest-desktop-agents
-        - hardware-support
-        - input-methods
-        - multimedia
-        - networkmanager-submodules
-        - printing
-        - standard
+        - firefox
 
   - type: default-flatpaks
     configurations:
@@ -35,11 +21,6 @@ modules:
         scope: system
         install:
           - org.mozilla.firefox
-          - org.gnome.Loupe
       - scope: user
 
   - type: signing
-  - type: systemd
-    system:
-      enabled:
-        - cosmic-greeter
