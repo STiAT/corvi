@@ -14,6 +14,10 @@ modules:
     group-remove:
       packages:
         - firefox
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
 
   - type: default-flatpaks
     configurations:
