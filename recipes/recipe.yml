@@ -12,21 +12,22 @@ modules:
 
   - type: dnf
     group-install:
-      - admin-tools
-      - basie-graphical
-      - core
-      - cosmic-desktop
-      - cosmic-desktop-apps
-      - desktop-accessibility
-      - dial-up
-      - fonts
-      - guest-desktop-agents
-      - hardware-support
-      - input-methods
-      - multimedia
-      - networkmanager-submodules
-      - printing
-      - standard
+      packages:
+        - admin-tools
+        - basie-graphical
+        - core
+        - cosmic-desktop
+        - cosmic-desktop-apps
+        - desktop-accessibility
+        - dial-up
+        - fonts
+        - guest-desktop-agents
+        - hardware-support
+        - input-methods
+        - multimedia
+        - networkmanager-submodules
+        - printing
+        - standard
 
   - type: default-flatpaks
     configurations:
