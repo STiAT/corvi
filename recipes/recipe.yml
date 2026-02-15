@@ -11,26 +11,22 @@ modules:
         destination: /
 
   - type: dnf
-    install:
-      packages:
-        - "@cosmic-desktop-environment"
-    remove:
-      install-groups:
-        - admin-tools
-        - basie-graphical
-        - core
-        - cosmic-desktop
-        - cosmic-desktop-apps
-        - desktop-accessibility
-        - dial-up
-        - fonts
-        - guest-desktop-agents
-        - hardware-support
-        - input-methods
-        - multimedia
-        - networkmanager-submodules
-        - printing
-        - standard
+    install-groups:
+      - admin-tools
+      - basie-graphical
+      - core
+      - cosmic-desktop
+      - cosmic-desktop-apps
+      - desktop-accessibility
+      - dial-up
+      - fonts
+      - guest-desktop-agents
+      - hardware-support
+      - input-methods
+      - multimedia
+      - networkmanager-submodules
+      - printing
+      - standard
 
   - type: default-flatpaks
     configurations:
