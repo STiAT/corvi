@@ -22,6 +22,7 @@ modules:
         scope: system
         install:
           - org.mozilla.firefox
+          - org.gnome.Loupe
       - scope: user
 
   - type: signing
