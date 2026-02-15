@@ -11,9 +11,6 @@ modules:
         destination: /
 
   - type: dnf
-    group-remove:
-      packages:
-        - firefox
     remove:
       packages:
         - firefox
