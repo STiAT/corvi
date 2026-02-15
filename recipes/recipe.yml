@@ -14,7 +14,7 @@ modules:
     group-install:
       packages:
         - admin-tools
-        - basie-graphical
+        - base-graphical
         - core
         - cosmic-desktop
         - cosmic-desktop-apps
