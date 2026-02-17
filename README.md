@@ -1,5 +1,10 @@
 # corvi &nbsp; [![bluebuild build badge](https://github.com/stiat/corvi/actions/workflows/build.yml/badge.svg)](https://github.com/stiat/corvi/actions/workflows/build.yml)
 
+This is my personal image for Fedora Cosmic, which removes firefox as a system package and installs it as a system flatpak.
+
+The reasoning is, that I do not like the choice of the browser being made by a system. This should be a user choice, and there should be a choice to uninstall without layering if a user wants a different browser (Chrome, Brave, Zen, ..).
+
+
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 After setup, it is recommended you update this README to describe your custom image.
