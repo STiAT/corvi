@@ -25,6 +25,8 @@ modules:
         install:
           - org.mozilla.firefox
           - org.gnome.Loupe
+          - org.gnome.Papers
+          - io.missioncenter.MissionCenter
       - scope: user
 
   - type: signing
