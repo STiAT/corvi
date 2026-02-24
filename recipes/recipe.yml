@@ -21,12 +21,7 @@ modules:
   - type: default-flatpaks
     configurations:
       - notify: true
-        scope: system
-        install:
-          - org.mozilla.firefox
-          - org.gnome.Loupe
-          - org.gnome.Papers
-          - io.missioncenter.MissionCenter
+      - scope: system
       - scope: user
 
   - type: signing
