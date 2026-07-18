@@ -11,12 +11,16 @@ modules:
         destination: /
 
   - type: dnf
+    install:
+      packages:
+      - cosmic-monitor
     remove:
       packages:
         - firefox
         - firefox-langpacks
         - htop
         - nvtop
+        - gnome-system-monitor
 
   - type: default-flatpaks
     configurations:
