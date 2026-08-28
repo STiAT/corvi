@@ -18,7 +18,7 @@ dnf5 install -y \
     cosmic-monitor
 
 # add cosmic flatpak remote
-flatpak remote-add --if-not-exists --system https://apt.pop-os.org/cosmic/cosmic.flatpakrepo
+flatpak remote-add --if-not-exists --system cosmic https://apt.pop-os.org/cosmic/cosmic.flatpakrepo
 
 # Use a COPR Example:
 #
