@@ -17,6 +17,10 @@ dnf5 install -y \
     @cosmic-desktop \
     cosmic-monitor
 
+
+# add flathub remote
+sudo flatpak remote-add --if-not-exists --system flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 # add cosmic flatpak remote
 flatpak remote-add --if-not-exists --system cosmic https://apt.pop-os.org/cosmic/cosmic.flatpakrepo
 
