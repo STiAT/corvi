@@ -18,6 +18,11 @@ dnf5 install -y \
     cosmic-monitor
 
 
+# remove firefox
+dnf5 remove -y \
+    firefox \
+    firefox-langpacks
+
 # add flathub remote
 sudo flatpak remote-add --if-not-exists --system flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
