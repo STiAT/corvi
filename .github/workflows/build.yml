@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-      interval: "weekly"
+    interval: "weekly"
   push:
     branches:
       - main
