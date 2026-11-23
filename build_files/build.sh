@@ -17,6 +17,8 @@ dnf5 install -y \
     @cosmic-desktop \
     cosmic-monitor
 
+dnf5 install -y \
+    gamescope
 
 # remove firefox
 dnf5 remove -y \
